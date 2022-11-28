@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+}
+
+.App{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header{
+  padding: 20px 0;
+  text-align: center;
+}
+
+main{
+  flex-grow: 1;
+  width: 100%;
+}
+
+.footer{
+  padding: 20px 0;
+  text-align: center;
+}
+
+ul{
+  width: 100%;
+  list-style: none;
+  padding: 0 18px;
+}
+
+ul li::before{
+  content: "\200B";
+}
+
+.item{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 15px 15px 15px;
+  margin: 8px 0;
+  background-color: #EEE;
+}
+
+.item input[type="checkbox"] {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  margin-right: 9px;
+}
+
+.item label{
+  font-size: 16px;
+  flex-grow: 1;
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.item svg {
+  width: 48px;
+  height: 36px;
+  color:steelblue;
+  cursor: pointer;
+}
+
+.item svg:focus, 
+.item svg:hover {
+  color:red;
+  outline: none;
+}
+
+.addForm {
+  width: 100%;
+  display: flex;
+  margin: 8px 0 0;
+  justify-content: flex-start;
+  padding: 0 8px 4px;
+  border-bottom: 1px solid #eee;
+}
+
+.addForm label {
+  position: absolute;
+  left: -999px;
+}
+
+.addForm input {
+  flex-grow: 1;
+  max-width: calc(100% - 50px);
+  min-height: 48px;
+  font-size: 18px;
+  padding: 4px;
+  margin-right: 4px;
+  outline: none;
+}
